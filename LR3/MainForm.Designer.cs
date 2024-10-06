@@ -39,11 +39,13 @@
             this.tbName = new System.Windows.Forms.TextBox();
             this.tbSubject = new System.Windows.Forms.TextBox();
             this.tbBody = new System.Windows.Forms.TextBox();
+            this.cbService = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btSend
             // 
-            this.btSend.Location = new System.Drawing.Point(259, 440);
+            this.btSend.Location = new System.Drawing.Point(485, 440);
             this.btSend.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btSend.Name = "btSend";
             this.btSend.Size = new System.Drawing.Size(112, 39);
@@ -150,11 +152,34 @@
             this.tbBody.Size = new System.Drawing.Size(488, 193);
             this.tbBody.TabIndex = 10;
             // 
+            // cbService
+            // 
+            this.cbService.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbService.FormattingEnabled = true;
+            this.cbService.Items.AddRange(new object[] {
+            "GMail.com",
+            "Mail.ru"});
+            this.cbService.Location = new System.Drawing.Point(155, 445);
+            this.cbService.Name = "cbService";
+            this.cbService.Size = new System.Drawing.Size(241, 30);
+            this.cbService.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 452);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 22);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Выбрать сервис:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 497);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cbService);
             this.Controls.Add(this.tbBody);
             this.Controls.Add(this.tbSubject);
             this.Controls.Add(this.tbName);
@@ -189,6 +214,8 @@
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.TextBox tbSubject;
         private System.Windows.Forms.TextBox tbBody;
+        private System.Windows.Forms.ComboBox cbService;
+        private System.Windows.Forms.Label label7;
     }
 }
 
